@@ -81,3 +81,12 @@ const randomWords = () => {
     return words;
 }
 
+// Action Creators
+export const setBoard = () => {
+    const words = randomWords()
+    return {
+        type: 'board/setBoard',
+        payload: words
+    }
+}
+
