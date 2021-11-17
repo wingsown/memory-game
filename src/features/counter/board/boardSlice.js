@@ -11,4 +11,18 @@ const initialState = [
     {id: 9, contents: 'Pure Function', visibile: true, matched: true},
     {id: 10, contents: 'react-redux', visibile: true, matched: true},
     {id: 11, contents: 'react-redux', visibile: true, matched: true},
-]
+];
+
+export const boardReducer = (state = initialState, action) => {
+    switch(action.type) {
+        case 'board/setBoard':
+            let setState = [];
+            action.payload.forEach((element, index) => 
+            setState.push({
+                id: index,
+                contents: element,
+                visible: false,
+                matched: false
+            }));
+    }
+}
