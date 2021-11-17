@@ -90,3 +90,15 @@ export const setBoard = () => {
     }
 }
 
+export const flipCard = (id) => {
+    return {
+        type: 'board/flipCard',
+        payload: id
+    }
+}
+
+export const resetCards = (indices) => {
+    return {
+        type: 'board/resetCards'
+    }
+}
