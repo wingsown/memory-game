@@ -38,6 +38,20 @@ export const boardReducer = (state = initialState, action) => {
             if (index2 !== undefined) {
                 const card1 = flipState[index1];
                 const card2 = flipState[index2];
+
+                if (card1.contents === card2.contents) {
+                    flipState[index1] = {...card1, visible: false, matched: true}
+                    flipState[index2] = {...card2, visible: false, matched: true}
+                }
             }
+
+            return flipState;
+        case 'board/resetCards':
+            return state.map(card => ({
+                ...card,
+                visible: false
+            }));
+        default:
+            return state;        
     }
 }
