@@ -24,5 +24,20 @@ export const boardReducer = (state = initialState, action) => {
                 visible: false,
                 matched: false
             }));
+            
+            return setState;
+
+        case 'board/flipCard':
+            let flipState = [...state];
+            const cardID = action.payload;
+            
+            flipState[cardID] = {...state[cardID], visible: true}
+
+            const [index1, index2] = flipState.filter(card => card.visible).map(card => card.id);
+
+            if (index2 !== undefined) {
+                const card1 = flipState[index1];
+                const card2 = flipState[index2];
+            }
     }
 }
