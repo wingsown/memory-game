@@ -31,6 +31,13 @@ export const Card = ({ id, contents }) => {
         click = () => {};
     }
 
-    
+
+    if (matchedIds.includes(id)) {
+        cardStyle = 'matched';
+    }
+
+    if (visibleIds.length === 2) {
+        click = () => {};
+    }
 
 }
