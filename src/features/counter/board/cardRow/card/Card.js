@@ -40,4 +40,11 @@ export const Card = ({ id, contents }) => {
         click = () => {};
     }
 
-}
+    return (
+        <button 
+        onClick={click}
+        className={`card ${cardStyle}`}>
+            {cardText}
+        </button>
+    );
+};
