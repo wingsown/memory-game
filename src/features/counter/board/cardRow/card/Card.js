@@ -9,4 +9,14 @@ export const Card = ({ id, contents }) => {
     const dispatch = useDispatch();
     const visibleIds = useSelector(selectVisibleIds);
     const matchedIds = useSelector(selectMatchedIds);
+
+    // Flip Card Action
+    const flipHandler = (id) => {
+        dispatch(flipCard(id));
+    };
+
+    let cardStyle = 'resting';
+    let click = () => flipHandler(id);
+
+
 }
