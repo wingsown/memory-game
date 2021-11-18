@@ -18,5 +18,19 @@ export const Card = ({ id, contents }) => {
     let cardStyle = 'resting';
     let click = () => flipHandler(id);
 
+    let cardText = (
+        <img 
+        src={cardLogo}
+        className="logo-placeholder"
+        alt="Card option"
+        />
+    );
+
+    if (visibleIds.includes(id) || matchedIds.includes(id)) {
+        cardText = contents;
+        click = () => {};
+    }
+
+    
 
 }
