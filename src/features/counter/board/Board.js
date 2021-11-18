@@ -20,5 +20,11 @@ export const Board = () => {
         return rowCards;
     };
 
-    
+    let content = [];
+    for (let row=0; row < rows; row++) {
+        const rowCards = getRowCards(row);
+        content.push(
+            
+        )
+    }
 }
