@@ -1,8 +1,13 @@
+import { combineReducers, createStore } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { boardReducer } from '../features/board/boardSlice';
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+const rootReducer = combineReducers({
+  board: boardReducer,
 });
+
+export const store = createStore(rootReducer);
+
+
+
+
