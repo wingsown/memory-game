@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardRow } from './cardRow/CardRow';
 import { useSelector } from 'react-redux';
-import { selectBoard } from './boardSlice';
+import { resetCards, selectBoard } from './boardSlice';
 
 export const Board = () => {
 
@@ -25,7 +25,13 @@ export const Board = () => {
     for (let row=0; row < rows; row++) {
         const rowCards = getRowCards(row);
         content.push(
-            
-        )
+            <CardRow
+                key={row}
+                cards={rowCards}
+            />
+        );
     }
-}
+    return <div className="cards-container">
+                {content}
+            </div>
+};
