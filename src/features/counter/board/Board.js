@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardRow } from './cardRow/CardRow';
 import { useSelector } from 'react-redux';
-import { resetCards, selectBoard } from './boardSlice';
+import { selectBoard } from './boardSlice';
 
 export const Board = () => {
 
