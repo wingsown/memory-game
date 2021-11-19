@@ -9,6 +9,14 @@ import { setBoard, resetCards } from './features/counter/board/boardSlice';
 const App = () => {
   const dispatch = useDispatch();
 
+  const startGameHandler = () => {
+    dispatch(setBoard());
+  };
+
+  const tryAgainHandler = () => {
+    dispatch(resetCards());
+  };
+
 
   return (
     <div className="App">
