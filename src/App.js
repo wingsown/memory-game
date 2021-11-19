@@ -20,6 +20,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Board />
       <footer>
         <button>
           Start Game
