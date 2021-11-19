@@ -20,8 +20,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Score />
-      <Board />
       <footer>
         <button>
           Start Game
