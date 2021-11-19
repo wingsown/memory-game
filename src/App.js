@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Score } from './features/board/score/Score';
 import { Board } from './features/board/Board';
 import { useDispatch } from 'react-redux';
 import { setBoard, resetCards } from './features/board/boardSlice';
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Score />
       <Board />
       <footer>
         <button>
