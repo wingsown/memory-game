@@ -103,10 +103,7 @@ export const resetCards = (indices) => {
     }
 }
 
-export const selectBoard = state => state.board.map(card => ({
-    id: card.id,
-    contents: card.contents
-}));
+export const selectBoard = state => state.board.map(card => ({id:card.id, contents: card.contents}));
 
 export const selectVisibleIds = state => state.board.filter(card => card.visible).map(card => card.id);
 export const selectMatchedIds = state => state.board.filter(card => card.matched).map(card => card.id);
