@@ -23,10 +23,14 @@ const App = () => {
       <Score />
       <Board />
       <footer>
-        <button>
+        <button 
+          onClick={startGameHandler}
+          className="start-button">
           Start Game
         </button>
-        <button>
+        <button
+          onClick={tryAgainHandler}
+          className="try-new-pair-button">
           Try New Pair
         </button>
       </footer>
