@@ -36,3 +36,10 @@ code {
 .try-new-pair-button:focus {
   background-color: #7d1aff;
 }
+
+.score-container {
+  background-color: #f2f2f2;
+  padding: 18px 158px 23px 159px;
+  text-align: center;
+  font-size: 32px;
+}
