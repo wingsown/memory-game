@@ -56,6 +56,11 @@ code {
   font-size: 16px;
 }
 
+.card:hover,
+.card:focus {
+  background-color: #2e4085;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 138px);
