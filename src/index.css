@@ -23,6 +23,16 @@ code {
   background-color: #141c3a;
 }
 
+.start-button:hover,
+.start-button:focus {
+  background-color: #2c3f81;
+}
+
 .try-new-pair-button {
   background-color: #6400e4;
+}
+
+.try-new-pair-button:hover,
+.try-new-pair-button:focus {
+  background-color: #7d1aff;
 }
