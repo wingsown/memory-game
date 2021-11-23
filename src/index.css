@@ -82,5 +82,9 @@ code {
 }
 
 .card.no-match {
-  color: fd4d3f;
+  color: #fd4d3f;
+}
+
+.logo-placeholder {
+  width: 120px;
 }
