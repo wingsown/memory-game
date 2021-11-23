@@ -70,3 +70,17 @@ code {
   width: fit-content;
   padding: 24px 0 33px 0;
 }
+
+.card.selected {
+  background-color: initial;
+  color: #141c3a;
+  border: solid 1px #141c3a;
+}
+
+.card.matched {
+  color: #4fe0b0;
+}
+
+.card.no-match {
+  color: fd4d3f;
+}
