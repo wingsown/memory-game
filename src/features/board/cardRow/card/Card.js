@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectVisibleIds, flipCard, selectMatchedIds } from '../../boardSlice';
+import { selectVisibleIds, flipCard, selectMatchedIds, resetCards } from '../../boardSlice';
 
 let cardLogo = "https://static-assets.codecademy.com/Courses/Learn-Redux/matching-game/codecademy_logo.png";
 
@@ -14,6 +14,10 @@ export const Card = ({ id, contents }) => {
     const flipHandler = (id) => {
         dispatch(flipCard(id));
     };
+
+    const tryAgainHandler = () => {
+        dispatch(resetCards());
+      };
 
     let cardStyle = 'resting';
     let click = () => flipHandler(id);
@@ -37,7 +41,7 @@ export const Card = ({ id, contents }) => {
     }
 
     if (visibleIds.length === 2) {
-        click = () => {};
+        click = tryAgainHandler;
     }
 
     return (
