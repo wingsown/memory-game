@@ -1,8 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectVisibleIds, flipCard, selectMatchedIds, resetCards } from '../../boardSlice';
+import logo from './img/Icon_4.png';
 
-let cardLogo = "https://static-assets.codecademy.com/Courses/Learn-Redux/matching-game/codecademy_logo.png";
+// let cardLogo = "https://static-assets.codecademy.com/Courses/Learn-Redux/matching-game/codecademy_logo.png";
+
 
 export const Card = ({ id, contents }) => {
     
@@ -24,7 +26,7 @@ export const Card = ({ id, contents }) => {
 
     let cardText = (
         <img 
-        src={cardLogo}
+        src={logo}
         className="logo-placeholder"
         alt="Card option"
         />
