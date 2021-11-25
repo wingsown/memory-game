@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,14 +16,16 @@ code {
 
 .start-button,
 .try-new-pair-button {
-  margin-top: 4rem;
+  margin-top: 3rem;
   width: 30%;
-  padding: 19px 40px 19px 40px;
-  font-size: 20px;
+  padding: 1rem;
+  /* 19px 40px 19px 40px */
+  font-size: 15px;
   border: none;
   color: #fff;
   cursor: pointer;
-  background-color: #141c3a;
+  background-color: #262626;
+  font-family: 'Poppins', sans-serif;
 }
 
 .start-button:hover,
