@@ -26,6 +26,8 @@ code {
   cursor: pointer;
   background-color: #262626;
   font-family: 'Poppins', sans-serif;
+  transition: .3s;
+  font-weight: 500;
 }
 
 .start-button:hover,
