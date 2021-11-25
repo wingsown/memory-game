@@ -14,7 +14,8 @@ code {
 
 .start-button,
 .try-new-pair-button {
-  width: 50%;
+  margin-top: 4rem;
+  width: 30%;
   padding: 19px 40px 19px 40px;
   font-size: 20px;
   border: none;
