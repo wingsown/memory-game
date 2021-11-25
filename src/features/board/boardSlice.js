@@ -7,8 +7,8 @@ const initialState = [
     {id: 5, contents: 'Eminem', visible: true, matched: true},
     {id: 6, contents: 'JavaScript', visible: true, matched: true},
     {id: 7, contents: 'JavaScript', visibile: true, matched: true},
-    {id: 8, contents: 'Pure Function', visible: true, matched: true},
-    {id: 9, contents: 'Pure Function', visible: true, matched: true},
+    {id: 8, contents: 'Eloquent JavaScript', visible: true, matched: true},
+    {id: 9, contents: 'Eloquent JavaScript', visible: true, matched: true},
     {id: 10, contents: 'react-redux', visible: true, matched: true},
     {id: 11, contents: 'react-redux', visible: true, matched: true},
 ];
@@ -62,7 +62,7 @@ const wordPairs = [
     'One Piece', 'One Piece',
     'Eminem', 'Eminem',
     'JavaScript', 'JavaScript',
-    'Pure Function', 'Pure Function',
+    'Eloquent JavaScript', 'Eloquent JavaScript',
     'react-redux', 'react-redux',
 
 ]
