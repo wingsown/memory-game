@@ -9,8 +9,8 @@ const initialState = [
     {id: 7, contents: 'JavaScript', visibile: true, matched: true},
     {id: 8, contents: 'Eloquent JavaScript', visible: true, matched: true},
     {id: 9, contents: 'Eloquent JavaScript', visible: true, matched: true},
-    {id: 10, contents: 'react-redux', visible: true, matched: true},
-    {id: 11, contents: 'react-redux', visible: true, matched: true},
+    {id: 10, contents: 'Rich Dad Poor Dad', visible: true, matched: true},
+    {id: 11, contents: 'Rich Dad Poor Dad', visible: true, matched: true},
 ];
 
 export const boardReducer = (state = initialState, action) => {
@@ -63,7 +63,7 @@ const wordPairs = [
     'Eminem', 'Eminem',
     'JavaScript', 'JavaScript',
     'Eloquent JavaScript', 'Eloquent JavaScript',
-    'react-redux', 'react-redux',
+    'Rich Dad Poor Dad', 'Rich Dad Poor Dad',
 
 ]
 
