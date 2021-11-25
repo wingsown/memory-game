@@ -19,7 +19,6 @@ code {
   margin-top: 3rem;
   width: 30%;
   padding: 1rem;
-  /* 19px 40px 19px 40px */
   font-size: 15px;
   border: none;
   color: #fff;
@@ -56,8 +55,8 @@ code {
   padding: 20px 0;
   text-align: center;
   border-radius: 6px;
-  border: solid 1px #141c3a;
-  background-color: #141c3a;
+  border: solid 1px #1a1a1a;
+  background-color: #1a1a1a;
   color: #fff;
   cursor: pointer;
   height: 75px;
