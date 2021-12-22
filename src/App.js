@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Score } from './features/board/score/Score';
 import { Board } from './features/board/Board';
 import { useDispatch } from 'react-redux';
